@@ -4,10 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Tables and Forms</title>
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
     <main>
-      <!-- Complete the Exercises HERE -->
+      <h1>Soda Vendor</h1>
+      <section>
+        <h2>Soda Information </h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Drink</th>
+            <th>Total Servings</th>
+            <th>Serving Size</th>
+            <th>Calories Per Serving</th>
+            <th>Carbs Per Serving</th>
+            <th>Sugars Per Serving</th>
+            <th>Sodium Per Serving </th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr>
+            <td>Coca Cola</td>
+            <td>1</td>
+            <td>8 oz</td>
+            <td>139</td>
+            <td>39g</td>
+            <td>35g </td>
+            <td>45mg</td>
+           </tr>
+           <tr>
+            <td>Pepsi</td>
+            <td>1</td>
+            <td>8 oz</td>
+            <td>163</td>
+            <td>43g</td>
+            <td>40g</td>
+            <td>56mg</td>
+           </tr>
+           <tr>
+            <td>Coca Cola Zero</td>
+            <td>1</td>
+            <td>8 oz </td>
+            <td>0</td>
+            <td>0g</td>
+            <td>0g</td>
+            <td>0g </td>
+           </tr>
+           <tr>
+            <td>Dr. Pepper</td>
+            <td>1</td>
+            <td>8oz </td>
+            <td>100</td>
+            <td>27g</td>
+            <td>26g</td>
+            <td>30mg</td>
+           </tr>
+           <tr>
+            <td>Mountain Dew</td>
+            <td>1</td>
+            <td>8 oz</td>
+            <td>170</td>
+            <td>22g</td>
+            <td>46g</td>
+            <td>60mg</td>
+           </tr>
+          
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Add Soda Info</h2>
+     <form>
+      <fieldset><label for="drinkname">Name</label><input type="text" name="drinkname" id="drinkname"></fieldset>
+      <fieldset><label for="totalServings">Total Servings</label><input type="number" name="totalServings" id="totalservings"></fieldset>
+      <fieldset><label for="servingSize">Serving Size</label><input type="number" id="servingSize"></fieldset>
+      <fieldset><label for="calories">Calories</label><input type="number" name="calories" id="calories"></fieldset>
+      <fieldset><label for="carbs">Carbs (g)</label><input type="number" name="carbs" id="carbs"></fieldset>
+      <fieldset><label for="sugar">Sugar (g)</label><input type="text" name="sugar" id="sugar"></fieldset>
+      <fieldset><label for="sodium">Sodium (mg) </label><input type="text" name="sodium" id="sodium"></fieldset>
+     </form>
+     <button type= "submit">Add Info</button>
+
+    </section>
     </main>
   </body>
 </html>
+
